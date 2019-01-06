@@ -20,6 +20,8 @@ body{
 #page {
     max-width: 1200px; /* The same width as the biggest banner */
     margin: 0 auto; /* auto to left and right makes the page div centered. */
+    /* Any elements inside the page div will be positioned relative to the div page position element. */
+    position: relative;
 }
 
 /*** Text rules ***/
