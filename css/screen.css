@@ -9,10 +9,51 @@ Types: light, light italic, bold, bold italic.
 
 body{
     font-family: 'Open Sans', sans-serif;
-    /* The base settings for the font size. In the rest of the page it will be set relative to this value */
+    /* The base settings for the font size. In the rest of the page it will be set relative to this value (with em's) */
     font-size: 16px; 
     font-weight: 300; /* Light */
     color: #555;
     margin: 0px;
     padding: 0px;
+}
+
+/*** Text rules ***/
+
+h1{
+    /* 1em relative from the font-size value in the body which is here margin-bottom = 16px. */
+    margin: 0 0 1em 0;
+    /* 2.8em relative from the font-size value in the body. */
+    font-size: 2.8em;
+    font-weight: 700; /* Bold */
+}
+
+h2 {
+    margin: 0 0 0.5em 0;
+    font-size: 1.6em;
+    line-height: 1.1em;
+    font-weight: 700;
+}
+
+h3 {
+    margin: 0 0 0.5em 0;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+h4 {
+    margin: 0 0 1.5em 0;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+a {
+    color: #007eff;
+}
+
+a:visited {
+    color: #65b1ff;
 }
