@@ -11,4 +11,8 @@ body{
     font-family: 'Open Sans', sans-serif;
     /* The base settings for the font size. In the rest of the page it will be set relative to this value */
     font-size: 16px; 
+    font-weight: 300; /* Light */
+    color: #555;
+    margin: 0px;
+    padding: 0px;
 }
