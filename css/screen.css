@@ -65,6 +65,21 @@ a:visited {
     color: #65b1ff;
 }
 
+/* Rules for making anchors with the class btn to look like a button. */
+a.btn {
+    font-size: 1.2em;
+    color: #fff;
+    padding: 4px 15px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    transition: background-color 1s; /* The time for changing the background color in the hover pseudo class */
+}
+
+/* Changes the color of the anchor button to black with 70% transparance. */
+a.btn:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
 /*** Header rules ***/
 
 header {
@@ -89,4 +104,17 @@ header a.logo {
 /* For hiding the text of the anchor tag that shows the logo image for the user. */
 header a.logo span {
     display: none;
+}
+
+header div.hero {
+    position: absolute;
+    width: 42%;
+    top: 130px;
+    left: 55%;
+}
+
+header div.hero h1 {
+    line-height: 1em;
+    color: #fff;
+    margin: 0 0 30px 0;
 }
