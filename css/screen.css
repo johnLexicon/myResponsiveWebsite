@@ -1,0 +1,12 @@
+
+/*
+The imported item must be the first in the css file.
+Imported font from google fonts.
+Font family: Open sans.
+Types: light, light italic, bold, bold italic.
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
