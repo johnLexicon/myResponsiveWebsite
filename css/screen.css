@@ -72,3 +72,21 @@ header {
     background: #cf0004 url('../images/banner_1200.jpg') no-repeat center bottom;
     position: relative;
 }
+
+/* targets the anchor tags with the logo class inside the header element. */
+header a.logo {
+    position: absolute;
+    width: 160px; /* Same width as the logo.svg image. */
+    height: 66px; /* Same height as the logo.svg image. */
+    /* The first 0 is x position and second is y position. */
+    background: url('../images/logo.svg') no-repeat 0 0;
+    /* Means the background size is going to fit with the height and width values. */
+    background-size: contain;
+    top: 15px;
+    left: 10px;
+}
+
+/* For hiding the text of the anchor tag that shows the logo image for the user. */
+header a.logo span {
+    display: none;
+}
