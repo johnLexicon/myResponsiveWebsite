@@ -84,7 +84,7 @@ a.btn:hover {
 
 header {
     height:430px;
-    background: #cf0004 url('../images/banner_1200.jpg') no-repeat center bottom;
+    background: #cf0004 url(../images/banner_1200.jpg) no-repeat center bottom;
     position: relative;
 }
 
@@ -94,7 +94,7 @@ header a.logo {
     width: 160px; /* Same width as the logo.svg image. */
     height: 66px; /* Same height as the logo.svg image. */
     /* The first 0 is x position and second is y position. */
-    background: url('../images/logo.svg') no-repeat 0 0;
+    background: url(../images/logo.svg) no-repeat 0 0;
     /* Means the background size is going to fit with the height and width values. */
     background-size: contain;
     top: 15px;
@@ -118,3 +118,58 @@ header div.hero h1 {
     color: #fff;
     margin: 0 0 30px 0;
 }
+
+/*** Section - All ***/
+
+section {
+    margin: 0 30px;
+}
+
+section::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*** Section - Main ***/
+
+section.main {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+section.main aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+section.main .content {
+    background: no-repeat center top;
+    background-size: 75px 75px;
+    padding-top: 85px;
+    margin: 0 15px;
+}
+
+section.main aside h3 a {
+    color: #000;
+    text-decoration: none;
+}
+
+section.main aside h3 a:hover {
+    text-decoration: underline;
+}
+
+section.main aside .content.trending {
+    background-image: url(../images/icon_star.svg);
+}
+
+section.main aside .content.find-it {
+    background-image: url(../images/icon_marker.svg);
+}
+
+section.main aside .content.tools {
+    background-image: url(../images/icon_gear.svg);
+}
+
